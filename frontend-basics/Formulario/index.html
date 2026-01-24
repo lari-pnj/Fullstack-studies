@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="cabecalho">
+            <h1>Crie sua conta</h1>
+        </header>
+
+        <form id="cadastroForm">
+            <div class="dados">
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            </div>
+            <div class="dados">
+                <input type="email" id="email" name="email" placeholder="Seu Email" required>
+            </div>
+            <div class="dados">
+                <input type="password" id="senha" name="senha" placeholder="senha" autocomplete="new-password" required>
+            </div>
+            <div class="dados">
+                <input type="password" id="Confirmesenha" name="Confirmesenha" placeholder="Repita a senha" autocomplete="new-password" required>
+            </div>
+            <div class="termos">
+                <input type="checkbox" id="termos" name="termos" required>
+                <label for="termos">Eu li e concordo com os <a href="#">Termos de Uso</a></label>
+            </div>
+
+             <div class="btn">
+                <button type="submit">Cadastrar</button>
+            </div>
+
+            <p class="Login">
+                ja tem uma conta? <a href="#">Fazer Login</a>
+            </p>
+        </form>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>

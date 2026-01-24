@@ -1,0 +1,192 @@
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(216, 193, 238);
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+ .login {
+    width: 60%;
+    max-width: 470px;
+    min-height: 500px;
+    background-color: white;
+    border-radius: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding: 20px;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+ }
+ .hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    height: 0;
+    overflow: hidden;
+    padding:0;
+    margin:0;
+ }
+ .entrar {
+    width: 40%;
+    max-width: 300px;
+    min-height: 500px;
+    background-color: rgb(85, 54, 114);
+    border-radius: 15px 0px 0px 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+ }
+
+.entrar h1{
+    font-weight: 300;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    margin-bottom: 70px;
+    text-align: center;
+}
+.entrar p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(254, 211, 255);
+    margin-bottom: 40px;
+}
+
+.botão-entrar {
+    width: 70%;
+    padding: 10px;
+    border-color: rgb(255, 255, 255);
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0 0 5px rgba(255,255,255,0.5);
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+.botão-entrar:hover {
+    background-color: rgb(173, 121, 221);
+}
+.btn-show, .btn2-show {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9em;
+}
+.btn-show a {
+    color: white;
+    margin-top: 30px;
+    display: block;
+    margin-top: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    transition: color 0.2s;
+    text-decoration: none;
+}
+.btn2-show a {
+    color:rgb(43, 6, 78);
+    display: block;
+    margin-top: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.2s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn-show a, .btn2-show a:hover {
+    text-decoration: underline;
+}
+
+ .input-box {
+    width: 300px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+ }
+ .input-box input {
+    width: 100%;
+    padding: 10px;
+    padding-left: 30px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 5px;
+    font-size: 16px;
+ }
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 70px;
+    color: rgb(73, 3, 119);
+}
+
+.input-box img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 2%;
+    top: 50%;
+    transform: translateY(-50%);
+} 
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.botão-cadastrar {
+    width: 80%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: rgb(173, 121, 221);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.botão-cadastrar:hover {
+    background-color: rgb(60, 8, 119);
+}
+.entrar, .login {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+.esconder {
+    display: none !important;
+    opacity: 0;
+}
+
+@media (max-width: 768px){
+    .entrar {
+        width: 100%;
+        border-radius: 15px;
+    }
+    .login {
+        width: 100%;
+        border-radius: 15px;
+        margin: 30px;
+    }
+    .entrar h1,
+    .login h1 {
+        margin-bottom: 30px;
+        font-size: 1.8rem;
+    }
+    
+}

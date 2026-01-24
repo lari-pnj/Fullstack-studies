@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+
+        <section class="entrar">
+            <h1>Bem-Vindo de Volta</h1>
+            <p>Acesse sua conta agora</p>
+            <button class="botão-entrar">Entrar</button>
+
+            <p class="btn-show">
+                <a href="#" id="link-criar" >Não tenho conta? Criar nova</a>
+            </p>
+        </section>
+
+        <section class="login">
+            <h1>CRIE SUA CONTA</h1>
+            <form>
+                <div class="input-box">
+                    <input type="text" name="Nome" placeholder="Nome" autocomplete="name" required>
+                    <img src="icons/pessoa.png" alt="usuario">
+                </div>
+
+                <div class="input-box">
+                    <input type="email" name="Email" placeholder="Email" autocomplete="email" required>
+                    <img src="icons/e-mail.png" alt="email">
+                </div>
+
+                <div class="input-box">
+                    <input type="password" name="senha" placeholder="Senha" autocomplete="new-password" minlength="6" maxlength="15" required>
+                    <img src="icons/cadeado-trancado.png" alt="senha">
+                </div>
+                <button class="botão-cadastrar">Cadastrar</button>
+
+                <p class="btn2-show">
+                    <a href="#" id="link-entrar">Já tenho uma conta? Entrar</a>
+                </p>
+            </form>
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>

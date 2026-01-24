@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tarefas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>tarefas</h1>
+            <div class="barra-progresso">
+                <label for="file">Progresso das tarefas</label>
+                <progress id="file" value="0" max="100">70%</progress>
+            </div>
+            <nav class="filtros-tarefas">
+                <ul class="lista">
+                    <li><button class="filtro-item">todas</button></li>
+                    <li><button class="filtro-item">completas</button></li>
+                    <li><button class="filtro-item">pendentes</button></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="adicionar-tarefas">
+            <h2>Minhas tarefas</h2>
+            <form id="form-tarefas">
+                <input type="text" id="tarefa-input" placeholder="O que precisa ser feito?" required>
+                <button class="btn-adicionar" type="submit">Adicionar</button>
+            </form>
+        </section>
+        <section class="lista-tarefas">
+            <ul id="tarefas-lista">
+                <!-- Tarefas serão adicionadas aqui -->
+            </ul>
+        </section>
+    </div>
+ </body>
+ <script src="script.js"></script>
+</html>
